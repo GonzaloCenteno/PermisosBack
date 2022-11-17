@@ -1,0 +1,41 @@
+GET http://127.0.0.1:8000/api/v1/role
+Accept: application/json
+Authorization: Bearer 7|9xbMgeACdOXjgUWWttHfGS3Mt2akdoVxawrPvH9Z
+
+### Nuevo Rol
+
+POST http://127.0.0.1:8000/api/v1/role
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer 7|9xbMgeACdOXjgUWWttHfGS3Mt2akdoVxawrPvH9Z
+
+{
+    "nombre": "admin1",
+    "detalle": "Puede Administrar todo"
+}
+
+### Buscar Rol
+
+GET http://127.0.0.1:8000/api/v1/role/1
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer 7|9xbMgeACdOXjgUWWttHfGS3Mt2akdoVxawrPvH9Z
+
+### Modificar Rol
+
+PUT http://127.0.0.1:8000/api/v1/role/1
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer 7|9xbMgeACdOXjgUWWttHfGS3Mt2akdoVxawrPvH9Z
+
+{
+    "nombre": "Gerente",
+    "detalle": "Puede Administrar todo Modificado"
+}
+
+### Eliminar Rol
+
+DELETE http://127.0.0.1:8000/api/v1/role/1
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer 7|9xbMgeACdOXjgUWWttHfGS3Mt2akdoVxawrPvH9Z

@@ -1,0 +1,43 @@
+GET http://127.0.0.1:8000/api/v1/permiso
+Accept: application/json
+Authorization: Bearer 10|U0Dpzcmf8eWZ2Q2mhKq6qd9CfW8S3kOPy8cYhIaL
+
+### Nuevo Permiso
+
+POST http://127.0.0.1:8000/api/v1/permiso
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer 10|U0Dpzcmf8eWZ2Q2mhKq6qd9CfW8S3kOPy8cYhIaL
+
+{
+    "detalle": "create_permiso",
+    "action": "create",
+    "subject": "permiso"
+}
+
+### Buscar Permiso
+
+GET http://127.0.0.1:8000/api/v1/permiso/1
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer 10|U0Dpzcmf8eWZ2Q2mhKq6qd9CfW8S3kOPy8cYhIaL
+
+### Modificar Permiso
+
+PUT http://127.0.0.1:8000/api/v1/permiso/1
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer 10|U0Dpzcmf8eWZ2Q2mhKq6qd9CfW8S3kOPy8cYhIaL
+
+{
+    "detalle": "create_permiso1",
+    "action": "create1",
+    "subject": "permiso1"
+}
+
+### Eliminar Permiso
+
+DELETE http://127.0.0.1:8000/api/v1/permiso/1
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer 10|U0Dpzcmf8eWZ2Q2mhKq6qd9CfW8S3kOPy8cYhIaL

@@ -1,0 +1,43 @@
+GET http://127.0.0.1:8000/api/v1/usuario
+Accept: application/json
+Authorization: Bearer 7|OOioXLX8uPPVLrmv10NWpSYgMmpVZYI7D3YbDB2D
+
+### Nuevo Usuario
+
+POST http://127.0.0.1:8000/api/v1/usuario
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer 7|OOioXLX8uPPVLrmv10NWpSYgMmpVZYI7D3YbDB2D
+
+{
+    "name": "PRUEBA",
+    "email": "prueba@gmail.com",
+    "password": "123456"
+}
+
+### Buscar Usuario
+
+GET http://127.0.0.1:8000/api/v1/usuario/5
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer 12|FKlzF4FgEiq7krh13ZJ93844EO1wwCijIauSVAUl
+
+### Modificar Usuario
+
+PUT http://127.0.0.1:8000/api/v1/usuario/4
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer 12|FKlzF4FgEiq7krh13ZJ93844EO1wwCijIauSVAUl
+
+{
+    "name": "el mike",
+    "email": "gonzalo2@gmail.com",
+    "password": "123456"
+}
+
+### Eliminar Usuario
+
+DELETE http://127.0.0.1:8000/api/v1/usuario/3
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer 12|FKlzF4FgEiq7krh13ZJ93844EO1wwCijIauSVAUl
