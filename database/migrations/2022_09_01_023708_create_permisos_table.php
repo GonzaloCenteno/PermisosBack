@@ -18,6 +18,8 @@ return new class extends Migration
             $table->string("detalle"); // read_user read_producto
             $table->string("action", 30); // read, update, delete, manage
             $table->string("subject", 30); // User, Role, Permiso, Producto
+            $table->string("fields")->nullable();
+            $table->string("conditions")->nullable();
             $table->timestamps();
         });
     }
