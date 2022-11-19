@@ -28,7 +28,7 @@ class AuthController extends Controller
         if(count($usuario->roles) > 0){
             $usuario->roles[0]->permisos = $usuario->roles()->with("permisos")->get()->pluck("permisos")->flatten()->map(function($permiso){
                 return array('action' => $permiso->action, 'subject' => $permiso->subject);
-            });
+            })->unique()->values();
         }
         
         // return $usuario->roles()
